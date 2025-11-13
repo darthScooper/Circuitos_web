@@ -1,22 +1,59 @@
+
 body{
-  margin: 0;
-  margin-top: 0;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Asegura que el body tenga altura */
+}
+body::before{
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('imgs/circuito_imagen_back.jpg'); 
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px);
+  z-index: -1;
 }
 
+
 #boxHead{    
-  background-color: grey;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 5px;
+
+  background-color: rgb(7, 169, 93);
   width: 100%;
   height: 120px;
   margin-top: 0;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-
   align-items: center;
 }
 
+#boxHeadTittle{
+  display: grid;
+  border: 2px solid black;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  height: 100%;
+  align-items: center;
+  font-size: 20px;
+  background-color: blue;
+}
+#boxHeadSubtitle{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+}
+
+
 .box{
-  border: 5px;    
-  background-color: grey;
+  border: 2px solid black;  
+  border-radius: 5%;  
+  background-color: rgb(89, 134, 169);
   width: auto;
   margin-top: 10px;
   height: 200px;
@@ -56,4 +93,15 @@ body{
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 4px;
+}
+
+.infoBoxes{
+  background-color: rgb(89, 134, 169);
+}
+
+footer{
+  display: flex;
+  flex: 1;
+  min-height: 30vh;
+  flex-direction: column;
 }
