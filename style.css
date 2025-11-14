@@ -56,7 +56,7 @@
   border: 2px solid black;  
   overflow: hidden;
   border-radius: 40px 40px 40px 40px;  
-  background-color: rgb(89, 134, 169);
+  background-color: #828282;
   width: auto;
   margin-top: 10px;
   height: 200px;
@@ -70,6 +70,7 @@
   
   text-align: center;
   position: relative;
+  color: red;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -86,10 +87,26 @@
   box-shadow: 1px 10px 10px -10px rgba(0, 0, 24, 0.5);
   transform: scale(1.2);
 }
+/*configuracion de las imagenes de los componentes*/
+.box:hover svg line{
+  stroke: white;
+}
+.box:hover svg path{
+  stroke: white;
+}
+.box:hover svg{
+  stroke: white;
+}
+
+.simbol svg{
+  width: 150px;
+  height: 140px;
+}
+
 
 /*estilo de los subtitulos en las cajas*/
 .subtitulos{
-  color: green;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .parent1{
@@ -124,6 +141,6 @@ footer{
   flex: 1;
   min-height: 30vh;
   flex-direction: column; 
-  background-color: #828282;
+  background-color: #2b2b2b;
   color: white;
 }
