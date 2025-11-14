@@ -50,23 +50,29 @@ body::before{
 }
 
 
+/*bloques de elementos*/
 .box{
   border: 2px solid black;  
-  border-radius: 5%;  
+  overflow: hidden;
+  border-radius: 40px 40px 40px 40px;  
   background-color: rgb(89, 134, 169);
   width: auto;
   margin-top: 10px;
   height: 200px;
-  display: inline-block;
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   margin: 5px;
   transition:
-    box-shadow 0.3s,
-    transform 0.3s;
-
+  box-shadow 0.3s,
+  transform 0.3s;
+  
   text-align: center;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 .box:hover{
   background-color: black;
@@ -75,8 +81,14 @@ body::before{
 .box:hover,
 .box:focus,
 .box:active {
+  z-index: 10;  
   box-shadow: 1px 10px 10px -10px rgba(0, 0, 24, 0.5);
   transform: scale(1.2);
+}
+
+/*estilo de los subtitulos en las cajas*/
+#subtitulos{
+  font-size: 20;
 }
 
 .parent1{
