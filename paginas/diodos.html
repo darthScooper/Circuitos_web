@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diodos</title>
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body class="infoPages">
     <div id="header"></div>
     <script>
@@ -18,27 +20,169 @@
     <div>
         <div id="contenido">
             <div id="subContenido">
-                <div style="background-color: white;">
-                    <h1 style="font-family: fuenteNueva; font-size:3rem">Diodos</h1>
+                <div style="background-color: white; text-align: center;">
+                    <h1 style="font-family: fuenteNueva; font-size:4rem">Diodos</h1>
                 </div>
                 <div style="background-color: green;">
-                    <p class="txtInfo">
-                        Los diodos son componentes electrónicos que permiten que la corriente eléctrica pase en un solo sentido y bloquean el paso en el sentido contrario.
-                        Son esenciales en fuentes de poder, protección de circuitos, rectificación de corriente y muchas otras aplicaciones.<br>
-                        Un diodo es un componente hecho con material semiconductor (generalmente silicio) y formado por una unión PN:<br>
-                        P → zona positiva (agujeros)<br>
-                        N → zona negativa (electrones)<br>
-                        Por cómo están unidas estas dos zonas, el diodo solo conduce corriente si se polariza correctamente.
-                    </p>    
+                    <section>
+                        <h1>Diodos</h1>
+                        <p>
+                            Un diodo es un componente electrónico semiconductor que permite el paso de la corriente en
+                            un solo sentido.
+                            Se comporta como una “válvula eléctrica”, ya que conduce cuando está polarizado en directo y
+                            bloquea cuando
+                            está polarizado en inverso. Es uno de los dispositivos fundamentales en la electrónica.
+                        </p>
+
+                        <h2>Partes del diodo</h2>
+                        <ul>
+                            <li><strong>Ánodo (A)</strong>: terminal positivo.</li>
+                            <li><strong>Cátodo (K)</strong>: terminal negativo, marcado con una línea.</li>
+                            <li><strong>Unión PN</strong>: región interna donde ocurre la conducción.</li>
+                        </ul>
+
+                        <hr>
+
+                        <h2>Tipos de Diodos</h2>
+                        <ul>
+                            <li><strong>Diodo rectificador</strong>: usado para convertir CA en CC.</li>
+                            <li><strong>Diodo Zener</strong>: regula voltaje, funciona en ruptura.</li>
+                            <li><strong>Diodo LED</strong>: emite luz al conducir corriente.</li>
+                            <li><strong>Diodo Schottky</strong>: muy rápida conmutación y baja caída de voltaje.</li>
+                            <li><strong>Diodo de señal</strong>: pequeño, rápido, para altas frecuencias.</li>
+                            <li><strong>Diodo varactor (o varicap)</strong>: funciona como capacitor variable.</li>
+                            <li><strong>Diodo fotodetector (fotodiodo)</strong>: genera corriente con luz.</li>
+                        </ul>
+                        <hr>
+                        <h2>Características principales</h2>
+                        <ul>
+                            <li><strong>Caída de voltaje directa:</strong> ≈ 0.7 V (silicio), 0.3 V (germanio), 1.8–3.3
+                                V (LED).</li>
+                            <li><strong>Corriente máxima:</strong> corriente máxima permitida antes de dañarse.</li>
+                            <li><strong>Voltaje inverso máximo (VRM):</strong> voltaje que soporta sin romperse.</li>
+                            <li><strong>Corriente de fuga inversa:</strong> corriente mínima cuando bloquea.</li>
+                            <li><strong>Tiempo de recuperación inversa:</strong> velocidad al cambiar entre estados.
+                            </li>
+                        </ul>
+                        <hr>
+                        <h2>Tabla comparativa de tipos de diodos</h2>
+                        <table border="1" cellpadding="8">
+                            <tr>
+                                <th>Tipo de diodo</th>
+                                <th>Características</th>
+                                <th>Aplicaciones</th>
+                            </tr>
+                            <tr>
+                                <td>Rectificador</td>
+                                <td>Alta corriente, robusto</td>
+                                <td>Fuentes de alimentación</td>
+                            </tr>
+                            <tr>
+                                <td>Zener</td>
+                                <td>Opera en ruptura controlada</td>
+                                <td>Regulación de voltaje</td>
+                            </tr>
+                            <tr>
+                                <td>LED</td>
+                                <td>Emite luz al conducir</td>
+                                <td>Iluminación, indicadores</td>
+                            </tr>
+                            <tr>
+                                <td>Schottky</td>
+                                <td>Baja caída (~0.2 V), muy rápido</td>
+                                <td>Rectificación rápida, fuentes conmutadas</td>
+                            </tr>
+                            <tr>
+                                <td>Señal</td>
+                                <td>Rápido, baja corriente</td>
+                                <td>RF, comunicaciones</td>
+                            </tr>
+                            <tr>
+                                <td>Varactor</td>
+                                <td>Capacitancia variable</td>
+                                <td>Sintonizadores, RF</td>
+                            </tr>
+                        </table>
+                    </section>
+
                 </div>
             </div>
             <div class="grid-image">
                 <div id="subGridImage">
-                    <img src="../imgs/diodo.png" style="height: 200px;" alt="no se puede cargar la img">
+                    <center>
+                        <img src="../imgs/diodo.png" style="height: 200px;" alt="no se puede cargar la img">
+                    </center>
                 </div>
-                <div style="background-color: blue; width: 100%;height:auto">a</div>            
+                <div style="background-color: blue; width: 100%;height:auto">
+                    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+                    <script id="MathJax-script" async
+                            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+                    </script>
+
+                    <section style="font-family: fuenteNueva;">
+                        <h2>Fórmulas de Diodos</h2>
+
+                        <h3>1. Ecuación del diodo (Ecuación de Shockley)</h3>
+                        <p>\[
+                            I = I_S \left( e^{\frac{V_D}{nV_T}} - 1 \right)
+                        \]</p>
+
+                        <h4>Donde:</h4>
+                        <ul>
+                            <li>\( I \): Corriente del diodo</li>
+                            <li>\( I_S \): Corriente de saturación</li>
+                            <li>\( V_D \): Voltaje en el diodo</li>
+                            <li>\( n \): Factor de idealidad (1 a 2)</li>
+                            <li>\( V_T = \frac{kT}{q} \): Voltaje térmico ~26 mV a temperatura ambiente</li>
+                        </ul>
+
+                        <hr>
+
+                        <h3>2. Polarización directa</h3>
+                        <p>\[
+                            V_D \approx 0.7\,\text{V (Silicio)} \qquad V_D \approx 0.3\,\text{V (Germanio)}
+                        \]</p>
+
+                        <hr>
+
+                        <h3>3. Corriente inversa</h3>
+                        <p>\[
+                            I_R \approx I_S
+                        \]</p>
+
+                        <p>(Pequeña corriente de fuga cuando el diodo está en inversa).</p>
+
+                        <hr>
+
+                        <h3>4. Región Zener (ruptura controlada)</h3>
+                        <p>\[
+                            V_Z = \text{constante (aprox.)}
+                        \]</p>
+
+                        <p><strong>Corriente en un Zener con resistencia:</strong></p>
+                        <p>\[
+                            I_Z = \frac{V_{IN} - V_Z}{R}
+                        \]</p>
+
+                        <p><strong>Potencia en modo Zener:</strong></p>
+                        <p>\[
+                            P_Z = V_Z \cdot I_Z
+                        \]</p>
+
+                        <hr>
+
+                        <h3>5. Potencia en un diodo</h3>
+                        <p>\[
+                            P = V_D \cdot I_D
+                        \]</p>
+
+                        <hr>
+                    </section>
+
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>

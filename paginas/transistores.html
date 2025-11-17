@@ -18,21 +18,182 @@
     <div>
         <div id="contenido">
             <div id="subContenido">
-                <div style="background-color: white;">
-                    <h1 style="font-family: fuenteNueva; font-size:3rem">Transistores</h1>
+                <div style="text-align: center; background-color: white; display: inline-block;">
+                    <br><br><br><br>
+                    <h1 style="font-family: fuenteNueva; font-size:4rem">Transistores</h1>
                 </div>
                 <div style="background-color: green;">
                     <p class="txtInfo">
                         Los transistores son componentes electrónicos fundamentales que sirven para controlar, amplificar o conmutar señales eléctricas. Son la base de casi toda la electrónica moderna (computadoras, radios, fuentes de poder, sensores, etc.).<br>
                         Es como un interruptor electrónico que puede encenderse o apagarse muy rápido, o trabajar de forma intermedia para amplificación.
+                        <section>
+                            <h1>Transistores BJT y FET</h1>
+
+                            <h2>1. BJT (Bipolar Junction Transistor)</h2>
+                            <p>El BJT es un transistor bipolar que funciona utilizando portadores de carga mayoritarios y minoritarios.</p>
+
+                            <h3>Características</h3>
+                            <ul>
+                                <li>Controlado por corriente: la corriente de salida depende de la corriente en la base.</li>
+                                <li>Tres terminales: Base (B), Colector (C), Emisor (E).</li>
+                                <li>Alta ganancia de corriente (&beta;).</li>
+                                <li>Menor impedancia de entrada.</li>
+                            </ul>
+
+                            <h3>Ventajas</h3>
+                            <ul>
+                                <li>Ideales para amplificación analógica de precisión.</li>
+                                <li>Ofrecen grandes ganancias de corriente.</li>
+                            </ul>
+
+                            <h3>Desventajas</h3>
+                            <ul>
+                                <li>Consumen más corriente.</li>
+                                <li>Menor eficiencia en conmutación.</li>
+                            </ul>
+
+                            <hr>
+
+                            <h2>2. FET (Field Effect Transistor)</h2>
+                            <p>El FET es un transistor de efecto de campo que utiliza solo portadores mayoritarios y es controlado por voltaje.</p>
+
+                            <h3>Características</h3>
+                            <ul>
+                                <li>Controlado por voltaje: la corriente del drenador depende del voltaje en la compuerta.</li>
+                                <li>Tres terminales: Gate (G), Drain (D), Source (S).</li>
+                                <li>Altísima impedancia de entrada.</li>
+                                <li>Consumo casi nulo en la compuerta.</li>
+                            </ul>
+
+                            <h3>Tipos principales</h3>
+                            <ul>
+                                <li><strong>JFET</strong> (Junction FET)</li>
+                                <li><strong>MOSFET</strong> (Metal Oxide Semiconductor FET)
+                                <ul>
+                                    <li>De enriquecimiento (Enhancement)</li>
+                                    <li>De agotamiento (Depletion)</li>
+                                </ul>
+                                </li>
+                            </ul>
+
+                            <h3>Ventajas</h3>
+                            <ul>
+                                <li>Muy eficientes en conmutación.</li>
+                                <li>Uso común en electrónica digital y potencia.</li>
+                                <li>Impedancia de entrada muy alta.</li>
+                            </ul>
+
+                            <h3>Desventajas</h3>
+                            <ul>
+                                <li>Sensibles a descargas electrostáticas (especialmente MOSFET).</li>
+                                <li>Linealidad inferior en ciertos rangos comparado con BJT.</li>
+                            </ul>
+
+                            <hr>
+                            <table border="1" cellpadding="8">
+                                <tr>
+                                <th>Característica</th>
+                                <th>BJT</th>
+                                <th>FET</th>
+                                </tr>
+                                <tr>
+                                <td>Control</td>
+                                <td>Corriente</td>
+                                <td>Voltaje</td>
+                                </tr>
+                                <tr>
+                                <td>Impedancia de entrada</td>
+                                <td>Baja - Media</td>
+                                <td>Muy alta</td>
+                                </tr>
+                                <tr>
+                                <td>Consumo</td>
+                                <td>Mayor</td>
+                                <td>Muy bajo</td>
+                                </tr>
+                                <tr>
+                                <td>Robustez</td>
+                                <td>Robusto</td>
+                                <td>Sensible a ESD</td>
+                                </tr>
+                                <tr>
+                                <td>Aplicaciones</td>
+                                <td>Audio, amplificación lineal</td>
+                                <td>Electrónica digital, potencia</td>
+                                </tr>
+                                <tr>
+                                <td>Eficiencia</td>
+                                <td>Menor</td>
+                                <td>Alta</td>
+                                </tr>
+                            </table>
+                            </section>
+
                     </p>    
                 </div>
             </div>
             <div class="grid-image">
                 <div id="subGridImage">
-                    <img src="../imgs/transistor.png" style="height: 200px;" alt="no se puede cargar la img">
+                    <br>
+                    <center>
+                        <img src="../imgs/transistor.png" style="height: 400px;" alt="no se puede cargar la img">
+                    </center>
                 </div>
-                <div style="background-color: blue; width: 100%;height:auto">a</div>            
+                <div style="background-color: cyan; width: 100%; font-family: fuenteNueva;">
+                    <!-- Agregar MathJax para renderizar fórmulas -->
+                    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+                    <script id="MathJax-script" async
+                    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+                    </script>
+
+                    <section style="text-align: center;">
+                        <h2>1. Transistores BJT</h2>
+
+                        <h3>Relación de corrientes</h3>
+                        <p>\( I_C = \beta I_B \)</p>
+                        <p>\( I_E = I_C + I_B \)</p>
+                        <p>\( \alpha = \frac{I_C}{I_E} \)</p>
+                        <p>\( \beta = \frac{\alpha}{1 - \alpha} \)</p>
+
+                        <h3>Región activa</h3>
+                        <p>\( V_{BE} \approx 0.7\,\text{V (Si)} \)</p>
+
+                        <h3>Ganancia de voltaje</h3>
+                        <p>\( A_v \approx -\frac{R_C}{r_e} \)</p>
+                        <p>\( r_e = \frac{26mV}{I_E} \)</p>
+                    </section>
+
+                    <section style="text-align: center;">
+                        <h2>2. Transistores FET / JFET</h2>
+
+                        <h3>Ecuación de Shockley</h3>
+                        <p>\( I_D = I_{DSS}\left(1 - \frac{V_{GS}}{V_P}\right)^2 \)</p>
+
+                        <h3>Transconductancia</h3>
+                        <p>\( g_m = g_{m0}\left(1 - \frac{V_{GS}}{V_P}\right) \)</p>
+                        <p>\( g_m = \frac{2I_D}{|V_P|} \)</p>
+                    </section>
+
+                    <section style="text-align: center;">
+                        <h2>3. MOSFET</h2>
+
+                        <h3>Región de corte</h3>
+                        <p>\( I_D = 0 \quad \text{si} \quad V_{GS} < V_{th} \)</p>
+
+                        <h3>Región lineal</h3>
+                        <p>\( I_D = k[(V_{GS}-V_{th})V_{DS} - \frac{V_{DS}^2}{2}] \)</p>
+
+                        <h3>Región de saturación</h3>
+                        <p>\( I_D = \frac{k}{2}(V_{GS}-V_{th})^2 \)</p>
+
+                        <h3>Transconductancia</h3>
+                        <p>\( g_m = k(V_{GS}-V_{th}) \)</p>
+
+                        <h3>Constante k</h3>
+                        <p>\( k = \mu_n C_{ox}\frac{W}{L} \)</p>
+                    </section>
+
+                </div>            
             </div>
         </div>
     </div>
