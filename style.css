@@ -2,7 +2,10 @@
   font-family: 'fuenteNueva';
   src: url('fuentes/Ethnocentric-Regular.otf') format('truetype');
 }
-
+@font-face {
+  font-family: 'mathFont';
+  src: url('fuentes/cambria-math.ttf') format('truetype');
+}
 
 
 
