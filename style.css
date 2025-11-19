@@ -79,14 +79,14 @@
   
   text-align: center;
   position: relative;
-  color: red;
+  color: #e0e0e0;
 
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
 }
 .box:hover{
-  background-color: black;
+  background-color:#1a1a1a;
   color: white;
 }
 .box:hover,
