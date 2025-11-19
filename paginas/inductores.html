@@ -19,21 +19,163 @@
        <div>
         <div id="contenido">
             <div id="subContenido">
-                <div style="background-color: white;">
-                    <h1 style="font-family: fuenteNueva; font-size:3rem">Inductores</h1>
+                <div style="color: white;">
+                    <center>
+                        <h1 style="font-family: fuenteNueva; font-size:3rem">Inductores</h1>
+                    </center>
                 </div>
-                <div style="background-color: green;">
+                <div style="color: white;">
                     <p class="txtInfo">
                         Los inductores (o bobinas) son componentes electrónicos que almacenan energía en forma de campo magnético cuando circula corriente por ellos. Son muy usados en fuentes de poder, filtros, motores, antenas y circuitos de radiofrecuencia.<br>
                         Cuando la corriente pasa por la bobina, se genera un campo magnético, y esa energía almacenada afecta cómo se comporta la corriente en el circuito.
                     </p>    
+                    <section style="font-size: 1.3rem;">
+                        <h2>¿Cómo Funciona?</h2>
+                        <p>
+                            Cuando la corriente cambia, el inductor genera una fuerza contraelectromotriz (fem) que 
+                            <strong>se opone a la variación de corriente</strong>, de acuerdo con la Ley de Faraday.
+                            Esto hace que los inductores sean útiles para filtrar señales, almacenar energía y 
+                            controlar cambios bruscos de corriente.
+                        </p>
+
+                        <h2>Inductancia</h2>
+                        <p>
+                            La propiedad principal de un inductor es la <strong>inductancia</strong>, medida en 
+                            <strong>henrios (H)</strong>. Esta depende del número de espiras, del material del núcleo, 
+                            del área de la bobina y de su longitud.
+                        </p>
+
+                        <h2>Tipos de Inductores</h2>
+                        <ul>
+                            <li><strong>Inductores de aire:</strong> Estables y usados en alta frecuencia.</li>
+                            <li><strong>Inductores con núcleo de ferrita:</strong> Alta inductancia en poco espacio.</li>
+                            <li><strong>Inductores toroidales:</strong> Alta eficiencia y bajo ruido magnético.</li>
+                            <li><strong>Inductores de potencia:</strong> Utilizados en fuentes conmutadas.</li>
+                            <li><strong>Inductores variables:</strong> Permiten ajustar la inductancia manualmente.</li>
+                        </ul>
+
+                        <h2>Aplicaciones Comunes</h2>
+                        <ul>
+                            <li>Filtros en fuentes de alimentación.</li>
+                            <li>Transformadores y convertidores DC-DC.</li>
+                            <li>Almacenamiento de energía en convertidores de potencia.</li>
+                            <li>Supresión de ruido electromagnético (EMI).</li>
+                            <li>Resonancia en circuitos LC.</li>
+                        </ul>
+
+                        <h2>Propiedades Clave</h2>
+                        <ul>
+                            <li><strong>Oposición al cambio de corriente:</strong> absorbe o entrega energía para mantener estabilidad.</li>
+                            <li><strong>Campo magnético:</strong> la energía se almacena en el núcleo o en el aire alrededor de la bobina.</li>
+                            <li><strong>Frecuencia de trabajo:</strong> depende del núcleo y del diseño.</li>
+                        </ul>
+
+                        <h2>Precauciones</h2>
+                        <ul>
+                            <li>Evitar saturar el núcleo con corriente excesiva.</li>
+                            <li>Considerar las pérdidas por histéresis y corrientes parásitas.</li>
+                            <li>Evitar interferencias magnéticas entre inductores cercanos.</li>
+                        </ul>
+                        </section>
+
                 </div>
             </div>
             <div class="grid-image">
                 <div id="subGridImage">
                     <img src="../imgs/inductor.png" style="height: 200px;" alt="no se puede cargar la img">
                 </div>
-                <div style="background-color: blue; width: 100%;height:auto">a</div>            
+                <div style="color: white; width: 100%;height:auto">
+                    <section style="text-align: center; font-family: mathFont; font-size: 1.3rem;">
+                        <p>Inductancia de un inductor:</p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>L</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                            <mi>μ</mi><mi>N</mi><msup><mi>A</mi><mn>2</mn></msup>
+                            </mrow>
+                            <mi>l</mi>
+                        </mfrac>
+                        </math>
+                        <p>L = inductancia (H), μ = permeabilidad del núcleo, N = número de vueltas, A = área de la sección transversal, l = longitud del núcleo.</p>
+
+                        <!-- Voltaje inducido -->
+                        <p>Voltaje inducido en un inductor:</p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>V</mi>
+                        <mo>=</mo>
+                        <mi>L</mi>
+                        <mo>&#8290;</mo>
+                        <mfrac>
+                            <mi>dI</mi>
+                            <mi>dt</mi>
+                        </mfrac>
+                        </math>
+                        <p>V = voltaje inducido (V), L = inductancia (H), dI/dt = tasa de cambio de corriente (A/s).</p>
+
+                        <!-- Energía almacenada -->
+                        <p>Energía almacenada en un inductor:</p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>W</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mn>2</mn>
+                        </mfrac>
+                        <mi>L</mi>
+                        <msup><mi>I</mi><mn>2</mn></msup>
+                        </math>
+                        <p>W = energía (J), L = inductancia (H), I = corriente (A).</p>
+
+                        <!-- Reactancia inductiva -->
+                        <p>Reactancia inductiva:</p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>X</mi><mi>L</mi>
+                        <mo>=</mo>
+                        <mi>ω</mi><mi>L</mi>
+                        </math>
+                        <p>XL = reactancia inductiva (Ω), ω = 2πf (rad/s), L = inductancia (H).</p>
+
+                        <!-- Inductores en serie -->
+                        <p>Inductores en serie:</p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>L</mi>
+                        <mo>=</mo>
+                        <msub><mi>L</mi><mn>1</mn></msub>
+                        <mo>+</mo>
+                        <msub><mi>L</mi><mn>2</mn></msub>
+                        <mo>+ ... +</mo>
+                        <msub><mi>L</mi><mi>n</mi></msub>
+                        </math>
+                        <p>L total = suma de todas las inductancias (H).</p>
+
+                        <!-- Inductores en paralelo -->
+                        <p>Inductores en paralelo:</p>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mn>1</mn>
+                            <mi>L</mi>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <msub><mi>L</mi><mn>1</mn></msub>
+                        </mfrac>
+                        <mo>+</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <msub><mi>L</mi><mn>2</mn></msub>
+                        </mfrac>
+                        <mo>+ ... +</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <msub><mi>L</mi><mi>n</mi></msub>
+                        </mfrac>
+                        </math>
+                        <p>Recíproco de L total = suma de los recíprocos de cada L (H).</p>
+
+                    </section>
+                </div>            
             </div>
         </div>
     </div>

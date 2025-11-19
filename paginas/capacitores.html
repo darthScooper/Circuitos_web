@@ -19,29 +19,125 @@
      <div>
         <div id="contenido">
             <div id="subContenido">
-                <div style="background-color: white;">
-                    <h1 style="font-family: fuenteNueva; font-size:3rem">Capacitores</h1>
+                <div style="color: white;">
+                    <center>
+                        <br>
+                        <br>
+                        <h1 style="font-family: fuenteNueva; font-size:3.5rem">Capacitores</h1>
+                    </center>
                 </div>
-                <div style="background-color: green;">
+                <div style="color: white">
                     <p class="txtInfo">
                         Los condensadores (también llamados capacitores) son componentes electrónicos que almacenan energía eléctrica en forma de carga por un tiempo.
                         Son fundamentales en fuentes de alimentación, filtros, audio, temporizadores, motores, flashes de cámara y casi cualquier circuito electrónico.<br>
                         Un condensador está formado por dos placas metálicas separadas por un material aislante llamado dieléctrico (aire, cerámica, plástico, electrolito, etc.).<br>
-                        Cuando se aplica voltaje entre sus terminales:<br>
-                        una placa se carga positivamente<br>
-                        la otra se carga negativamente<br>
-                        → almacena energía eléctrica<br>
-                        La cantidad que puede almacenar se llama capacitancia, medida en faradios (F).
-                    </p>    
+                    </p>
+                    <section style="font-size: 1.3rem;">
+
+                        <h2>¿Cómo Funciona?</h2>
+                        <p>
+                            Cuando se aplica una diferencia de potencial entre sus terminales, las placas del capacitor 
+                            acumulan cargas de signo opuesto. La cantidad de carga que puede almacenar depende de la 
+                            <strong>capacitancia</strong>, que se mide en <strong>faradios (F)</strong>.
+                        </p>
+
+                        <h2>Capacitancia</h2>
+                        <p>
+                            La capacitancia de un capacitor viene dada por la fórmula:
+                        </p>
+                        <pre>C = ε · (A / d)</pre>
+                        <ul>
+                            <li><strong>C</strong>: capacitancia</li>
+                            <li><strong>ε</strong>: permitividad del dieléctrico</li>
+                            <li><strong>A</strong>: área de las placas</li>
+                            <li><strong>d</strong>: distancia entre las placas</li>
+                        </ul>
+
+                        <h2>Tipos de Capacitores</h2>
+                        <ul>
+                            <li><strong>Cerámicos:</strong> pequeños, económicos, para alta frecuencia.</li>
+                            <li><strong>Electrolíticos:</strong> gran capacitancia en tamaño reducido, polarizados.</li>
+                            <li><strong>De poliéster:</strong> estables y confiables, usados en filtros.</li>
+                            <li><strong>De tantalio:</strong> alta capacitancia, estables, polarizados.</li>
+                            <li><strong>Variables (trimmers):</strong> permiten ajustar la capacitancia manualmente.</li>
+                        </ul>
+
+                        <h2>Aplicaciones Comunes</h2>
+                        <ul>
+                            <li>Filtrado en fuentes de alimentación.</li>
+                            <li>Desacoplo y estabilización de señales.</li>
+                            <li>Temporización en circuitos RC.</li>
+                            <li>Acoplamiento de señales en audio y RF.</li>
+                            <li>Almacenamiento de energía (supercapacitores).</li>
+                        </ul>
+
+                        <h2>Precauciones</h2>
+                        <ul>
+                            <li>Respetar la polaridad en capacitores electrolíticos y de tantalio.</li>
+                            <li>No exceder el voltaje máximo (puede causar explosiones).</li>
+                            <li>Descargar el capacitor antes de manipularlo.</li>
+                        </ul>
+                        </section>
+    
                 </div>
             </div>
             <div class="grid-image">
                 <div id="subGridImage">
                     <center>
-                        <img src="../imgs/condensador.png" style="height: 200px;" alt="no se puede cargar la img">
+                        <img src="../imgs/condensador.png" style="height: 400px;" alt="no se puede cargar la img">
                     </center>
                 </div>
-                <div style="background-color: blue; width: 100%;height:auto">a</div>            
+                <div style="font-family: mathFont ;color: white; width: 100%;height:auto">
+                    <section style="text-align: center;">
+                        <h1>Fórmulas de Capacitores</h1>
+
+                        <h2>1. Capacitancia de un Capacitor de Placas Paralelas</h2>
+                        <pre>C = ε · (A / d)</pre>
+                        <ul>
+                            <li><strong>C</strong>: capacitancia (faradios, F)</li>
+                            <li><strong>ε</strong>: permitividad del dieléctrico</li>
+                            <li><strong>A</strong>: área de las placas (m²)</li>
+                            <li><strong>d</strong>: distancia entre placas (m)</li>
+                        </ul>
+
+                        <h2>2. Carga Almacenada</h2>
+                        <pre>Q = C · V</pre>
+                        <ul>
+                            <li><strong>Q</strong>: carga (coulombios)</li>
+                            <li><strong>C</strong>: capacitancia</li>
+                            <li><strong>V</strong>: voltaje aplicado</li>
+                        </ul>
+
+                        <h2>3. Energía Almacenada en un Capacitor</h2>
+                        <pre>W = (1/2) · C · V²</pre>
+                        <ul>
+                            <li><strong>W</strong>: energía (julios)</li>
+                        </ul>
+
+                        <h2>4. Corriente en un Circuito con Capacitor</h2>
+                        <pre>I(t) = C · dV(t)/dt</pre>
+
+                        <h2>5. Reactancia Capacitiva</h2>
+                        <pre>Xc = 1 / (2πfC)</pre>
+                        <ul>
+                            <li><strong>Xc</strong>: reactancia capacitiva (ohmios)</li>
+                            <li><strong>f</strong>: frecuencia (Hz)</li>
+                        </ul>
+
+                        <h2>6. Impedancia de un Capacitor</h2>
+                        <pre>Zc = -j / (2πfC)</pre>
+
+                        <h2>7. Combinación de Capacitores</h2>
+
+                        <h3>En Serie</h3>
+                        <pre>1/Ct = 1/C1 + 1/C2 + ... + 1/Cn</pre>
+
+                        <h3>En Paralelo</h3>
+                        <pre>Ct = C1 + C2 + ... + Cn</pre>
+
+                        </section>
+
+                </div>            
             </div>
         </div>
     </div>

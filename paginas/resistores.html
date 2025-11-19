@@ -19,21 +19,87 @@
     <div>
         <div id="contenido">
             <div id="subContenido">
-                <div style="background-color: white;">
-                    <h1 style="font-family: fuenteNueva; font-size:3rem">Resistores</h1>
+                <div style="color: white; align-items: center;">
+                    <center>
+                        <h1 style="font-family: fuenteNueva; font-size:3rem">Resistores</h1>
+                    </center>
                 </div>
-                <div style="background-color: green;    ">
+                <div style="color: white;">
                     <p class="txtInfo">
                         Las resistencias (o resistores) son componentes electrónicos cuya función principal es oponerse al paso de la corriente eléctrica. Están presentes prácticamente en todos los circuitos eléctricos y electrónicos porque permiten controlar cuánta corriente circula por cada parte del circuito.<br><br>
                         1. Limitar la corriente
                         Evitan que componentes sensibles (como LEDs, transistores, microcontroladores) reciban más corriente de la que soportan.
                         Ejemplo: Un LED conectado sin resistencia se quema inmediatamente.
                     </p>
+                    <section>
+                        <h1>Resistores</h1>
+                        <p>
+                            Un <strong>resistor</strong> (o resistencia) es un componente electrónico pasivo cuya función es 
+                            <em>oponerse al flujo de corriente eléctrica</em>. Se utiliza para controlar niveles de corriente, 
+                            dividir voltajes y proteger componentes en un circuito.
+                        </p>
+
+                        <h2>Características principales</h2>
+                        <ul>
+                            <li><strong>Resistencia (R):</strong> Valor medido en ohmios (Ω).</li>
+                            <li><strong>Tolerancia:</strong> Margen de variación respecto al valor nominal.</li>
+                            <li><strong>Potencia nominal:</strong> Cantidad de energía que puede disipar sin dañarse (W).</li>
+                            <li><strong>Coeficiente de temperatura:</strong> Cambio de resistencia según la temperatura.</li>
+                        </ul>
+
+                        <h2>Tipos de resistores</h2>
+                        <ul>
+                            <li><strong>Resistores fijos:</strong> De carbón, metálicos, de película, de alambre.</li>
+                            <li><strong>Resistores variables (potenciómetros):</strong> Ajustables manualmente.</li>
+                            <li><strong>Resistores SMD:</strong> Resistores en formato de montaje superficial.</li>
+                        </ul>
+
+                        <h2>Código de colores</h2>
+                        <p>Muchos resistores utilizan un <strong>código de bandas de colores</strong> para indicar su resistencia, tolerancia y a veces coeficiente térmico.</p>
+                        <center>
+
+                            <table border="1" cellpadding="6" cellspacing="0">
+                                <thead>
+                                <tr>
+                                    <th>Color</th>
+                                    <th>Dígito</th>
+                                    <th>Multiplicador</th>
+                                    <th>Tolerancia</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr><td>Negro</td><td>0</td><td>×1</td><td>-</td></tr>
+                                <tr><td>Marrón</td><td>1</td><td>×10</td><td>±1%</td></tr>
+                                <tr><td>Rojo</td><td>2</td><td>×100</td><td>±2%</td></tr>
+                                <tr><td>Naranja</td><td>3</td><td>×1k</td><td>-</td></tr>
+                                <tr><td>Amarillo</td><td>4</td><td>×10k</td><td>-</td></tr>
+                                <tr><td>Verde</td><td>5</td><td>×100k</td><td>±0.5%</td></tr>
+                                <tr><td>Azul</td><td>6</td><td>×1M</td><td>±0.25%</td></tr>
+                                <tr><td>Violeta</td><td>7</td><td>×10M</td><td>±0.1%</td></tr>
+                                <tr><td>Gris</td><td>8</td><td>×100M</td><td>±0.05%</td></tr>
+                                <tr><td>Blanco</td><td>9</td><td>-</td><td>-</td></tr>
+                                <tr><td>Dorado</td><td>-</td><td>×0.1</td><td>±5%</td></tr>
+                                <tr><td>Plateado</td><td>-</td><td>×0.01</td><td>±10%</td></tr>
+                                </tbody>
+                            </table>
+                        </center>
+
+                        <h2>Ley de Ohm</h2>
+                        <p>
+                            Los resistores obedecen la <strong>Ley de Ohm</strong>:<br>
+                            <code>V = I × R</code><br>
+                            Donde <strong>V</strong> es voltaje, <strong>I</strong> corriente y <strong>R</strong> resistencia.
+                        </p>
+                        </section>
+
                 </div>
             </div>
             <div class="grid-image">
                 <div class="subGridImage">
-                    <img src="../imgs/sub_resistencia.png" alt="no se puede cargar la img">
+                    <center>
+
+                        <img src="../imgs/sub_resistencia.png" alt="no se puede cargar la img">
+                    </center>
                 </div>
                 <div style="width: 100%;height:auto">
                     <div>
